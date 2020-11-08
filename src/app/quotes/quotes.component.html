@@ -1,7 +1,7 @@
 <div class="container">
-  <h1>Quotes</h1>
-  <hr>
-
+    <h1>Quotes</h1>
+    <hr>
+  
     <div class="row">
       <div class="col-md-6">
         <app-quotes-form (addQuote)="addNewQuote($event)"></app-quote-form>  
@@ -15,7 +15,6 @@
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
           </div>
         </div>
-      </div>
       <div class="col-md-6">
         <app-quote-form></app-quote-form>
       </div>
