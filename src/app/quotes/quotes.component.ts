@@ -13,7 +13,6 @@ export class QuotesComponent implements OnInit {
     new quotes.Quotes(3,'By Robin Sharma','“Everything is created twice, first in the mind and then in reality."',new Date(2000/8/30)),
     new quotes.Quotes(4,'By Chinua Achebe','"One of the truest tests of integrity is its blunt refusal to be compromised."',new Date(2015/3/14)),
     new quotes.Quotes(5,'By Nelson Mandela','“Resentment is like drinking poison and then hoping it will kill your enemies.”',new Date(2020/6/16)),
-    new quotes.Quotes(6,'By Mark Collins',"If your dream doesn't scare you,then it's too small."',new Date(2020/5/5))
   ]
 
 
