@@ -5,16 +5,15 @@
     <div class="row">
       <div class="col-md-6">
         <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>  
-        <div *ngFor='let quote of quotes;let i = index'></div>
+        <div *ngFor='let quote of quotes;let i = index'>
     
             <h6 id={{i}} appStrikethrough>{{quote.name}} submitted on {{quote.completeDate|date|uppercase}}</h6>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">SHOW QUOTE</button>
           </div>
   
-          <div *ngIf='quotes.showDescription'></div>
-            <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+          <div class="" *ngIf='quotes.showDescription'></div>
+            <app-quotes-detail class=""  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quotes-detail>
           </div>
         </div>
       </div>
-    </div>
     
