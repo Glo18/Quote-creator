@@ -1,19 +1,22 @@
 <div class="container">
-    <h1>Quotes</h1>
+    <h1>Welcome to Quote-creator</h1>
     <hr>
   
     <div class="row">
-      <div class="col-md-6">
-        <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>  
-        <div *ngFor='let quote of quotes;let i = index'>
-    
+      <div class="col-md-6">  
+          <div *ngFor='let quote of quotes;let i = index'>
+          <div>
             <h6 id={{i}} appStrikethrough>{{quote.name}} submitted on {{quote.completeDate|date|uppercase}}</h6>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">SHOW QUOTE</button>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
           </div>
   
           <div *ngIf='quotes.showDescription'></div>
-            <app-quotes-detail [quotes]='quotes' (isComplete) = 'deleteQuote($event,i)'></app-quotes-detail>
-          </div>
-        </div>
+            <app-quotes-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quotes-detail>
       </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
+</div>
     
