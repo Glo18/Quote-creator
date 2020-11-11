@@ -1,4 +1,6 @@
-<p>{{quotes.showDescription}}</p>
+<p>{{quotes.description}}</p>
+<p>This shows time that has passed since the quote was created{{quotes.completeDate|dateCount}}in days</p>
+<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 <div class="vote">
     <button (click)='voteUp()' class="btn btn-info" type="submit"></button>
     <span class="badge">{{upvote}} Likes</span>
@@ -6,5 +8,4 @@
     <button (click)='voteDown()' class="btn btn-info" type="submit">
         <span class="badge">{{downvote}} Dislikes</span>
     </button>
-    <button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 </div>
