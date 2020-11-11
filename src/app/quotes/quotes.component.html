@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Feel free to add your quotes.</h1>
+  <h1>Feel free to add your own quotes</h1>
   <hr>
 
   <div class="row">
@@ -7,16 +7,17 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
           <h6 id={{i}} appStrikethrough>{{quote.name}} submitted on {{quote.completeDate|date|uppercase}}</h6>
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+         <!-- <p>{{quote.description}}</p> 
+         <p>{{quote.completeDate}}</p> -->
         </div>
-
-        <div *ngIf='quotes.showDescription'>
-          <app-quotes-detail [quotes]='quotes' (isComplete)='deleteQuote($event,i)'></app-quotes-detail>
+        <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+        <div *ngIf='quote.showDescription'>
+          <app-quotes-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quotes-detail>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    <div class="col-md-6">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
   </div>
 </div>
