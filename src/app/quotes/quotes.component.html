@@ -7,8 +7,6 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
           <h6 id={{i}} appStrikethrough>{{quote.name}} submitted on {{quote.completeDate|date|uppercase}}</h6>
-         <!-- <p>{{quote.description}}</p> 
-         <p>{{quote.completeDate}}</p> -->
         </div>
         <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         <div *ngIf='quote.showDescription'>
