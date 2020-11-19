@@ -1,27 +1,35 @@
-# QuoteCreator
+## Quote-creator
+.. By Glory Kiogora
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Description
+This is an website that allows users 
 
-## Development server
+## BDD
+The program provides an input to add and vote for a quote.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Example input: author,quote,date the quote was submiited and the person submitting the quote.
 
-## Code scaffolding
+## Prerequisites
+Angular Node.js
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
+https://glo18.github.io/Quote-creator/ download the zip file unzip it on the folder that has angular installed navigate to the unzipped folder on your terminal and run the commmand ng serve open your browser and type localhost/4200 as the url.
 
-## Build
+## Known Bugs
+None
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies used
+HTML
+CSS 
+JavaScript 
+Angular
+Bootstrap
 
-## Running unit tests
+Link to gh-pages
+https://github.com/Glo18
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Support and contact details
+https://github.com/Glo18
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+License
+MIT Copyright (c) 2019 Glory Kiogora
