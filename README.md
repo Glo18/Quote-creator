@@ -1,8 +1,10 @@
 ## Quote-creator
+
+This is an app that enables users to create quotes and can also decide whether they are good or not 
 .. By Glory Kiogora
 
 ## Description
-This is an website that allows users 
+This is a website that allows users to create quotes,delete them and vote for them deciding whether they are good or not.One can also view what others submitted and the days that they submitted. 
 
 ## BDD
 The program provides an input to add and vote for a quote.
@@ -25,11 +27,8 @@ JavaScript
 Angular
 Bootstrap
 
-Link to gh-pages
+## Support and contact details
 https://github.com/Glo18
 
-Support and contact details
-https://github.com/Glo18
-
-License
+## License
 MIT Copyright (c) 2019 Glory Kiogora
